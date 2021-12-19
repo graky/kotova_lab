@@ -30,7 +30,7 @@ def add_line(path, fields_number):  # добавляем новую строку
         file_processing(path)
     if (
         len(new_line.split("|")) == fields_number or fields_number < 2
-    ):  # добавляем строку, если введеная строка содержит тоже количество полей, что и до этого в файле или файл новый
+    ):  # добавляем строку, если введенная строка содержит тоже количество полей, что и до этого в файле или файл новый
         with open(path, "a", encoding="utf-8") as file:
             file.write(new_line + "\n")
             file.close()
